@@ -18,7 +18,7 @@ export class TasksResolver {
   }
 
   @Query('task')
-  findOne(@Args('id') id: number) {
+  findOne(@Args('id') id: string) {
     return this.tasksService.findOne(id);
   }
 
